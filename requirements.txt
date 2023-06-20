@@ -1,0 +1,4 @@
+openai
+numpy
+music21
+git+https://github.com/mathigatti/midi2voice.git
