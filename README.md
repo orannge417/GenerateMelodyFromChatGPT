@@ -1,6 +1,7 @@
 Run on linux(ubuntu distribution)
 
 Setups:
+Create output folder
 
 pip install requirements.txt
 
