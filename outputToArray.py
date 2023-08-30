@@ -28,5 +28,5 @@ def outputToArray(Output):
         elif (rhythmBool == True and char != " "):
             rhythmArray[rhythmCount] += char
 
-    print(keyArray, rhythmArray)
+    
     return(keyArray, rhythmArray)

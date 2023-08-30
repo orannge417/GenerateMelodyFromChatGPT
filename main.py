@@ -3,7 +3,9 @@
 
 
 from outputToArray import outputToArray
+from analyzeArray import analyzeArray
 from music21Midi import outputMidi
+
 
 if __name__ == '__main__' :
     output = input("Please input the abc-Notation outputted from chatGPT\n")
@@ -11,6 +13,11 @@ if __name__ == '__main__' :
     midiName = "output//" + input("Name of the midi file: \n") + ".midi"
 
     keyArray, rhythmArray = outputToArray(output)
+    print("Note: ", keyArray, "\n")
+    
+    print("Note Length: ", rhythmArray, "\n")
+
+    analyzeArray(keyArray, rhythmArray)
 
     outputMidi(rhythmArray, keyArray, midiName)
     
